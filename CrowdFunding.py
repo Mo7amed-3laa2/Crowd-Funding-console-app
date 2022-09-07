@@ -220,7 +220,13 @@ def Rgstr():
     f_name = isValidName("Enter Your First Name: ")
     l_name = isValidName("Enter Your Last Name: ")
     email = isValidEmail("Enter Your email: ")
-    passwd = input("Enter Your passwd: ")
+    passwd = input("Enter Your Password: ")
+    confirmpswd = input("Enter Your Password Again: ")
+    while confirmpswd != passwd:
+        print("Password doesnot match !")
+        passwd = input("Enter Your Password: ")
+        confirmpswd = input("Please Confirm Your Password: ")
+
     phone = isValidPhone("Enter Your phone number: ")
     
     print("You Have Registered Successfully!")
