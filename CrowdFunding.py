@@ -198,8 +198,9 @@ def isValidEmail(msg):
     email = input(msg)
     if re.fullmatch(mailregex, email):
         return email
-    else: isValidEmail("Enter a Valid email: ")
-    return email
+    else:
+        return isValidEmail("Enter a Valid email: ")
+    
 def isValidPhone(msg):
     phone = input(msg)
     if re.fullmatch(phoneregex, phone):
