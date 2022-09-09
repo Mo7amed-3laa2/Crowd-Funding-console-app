@@ -141,7 +141,7 @@ def loginMenu(usr_id):
     print ('Press 1 to View All projects')   # done
     print ('Press 2 to Create New Project')  # done
     print ('Press 3 to Delete a Project')    # done
-    print ('Press 4 to Search for a Project by date') # in progress
+    print ('Press 4 to Search for a Project by date') # done
     print ('Press 5 to Edit a Project')      # done but not in best way !
     print ('Press 6 to go to the Main Menu') # done
     print ('Press 0 to Exit') # done
@@ -199,7 +199,7 @@ def isValidEmail(msg):
     if re.fullmatch(mailregex, email):
         return email
     else: isValidEmail("Enter a Valid email: ")
-
+    return email
 def isValidPhone(msg):
     phone = input(msg)
     if re.fullmatch(phoneregex, phone):
@@ -212,6 +212,7 @@ def isValidName(msg):
         return name
     else:
         isValidName("Enter a Valid Name: ")
+    return name 
 
 #---(Registration functions)----------------------------
 def Rgstr():
