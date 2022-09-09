@@ -235,7 +235,7 @@ def Rgstr():
     print(f"Your data (Name:{f_name} {l_name} Mail:{email} Password:{passwd} Phone Number:{phone} id:{usr_id}")
 
     fileobject=open("files/users.txt", "a")
-    fileobject.writelines(f_name+":"+l_name+":"+email+":"+passwd+":"+phone+":"+str(usr_id))
+    fileobject.writelines(f_name+":"+l_name+":"+email+":"+passwd+":"+phone+":"+str(usr_id)+"\n")
     fileobject.close()
 
 #-------------------------------(Main Menu)--------------------------------------------------------------#
